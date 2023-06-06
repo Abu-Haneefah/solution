@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <!-- BOOTSTRAP V5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- CSS  -->
+  <!-- FONT AWESOME -->
+<script src="https://kit.fontawesome.com/96e8aad253.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./css/styles.css">
+  <!-- GOOGLE FONT -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <!-- Sign-up form start -->
+  <div class="row" id="front-page">
+
+    <div class="col-lg-6 col-md-6 col-sm-12 order-md-2">
+      <img src="./assets/images/illustration-sign-up-desktop.svg" alt="">
+      </div>
+<div class="col-lg-6 col-md-6 col-sm-12 order-md-1">
+ <h1>Stay updated!</h1>
+ <p>Join 60,000+ product managers receiving monthly updates on:</p>
+ <ul>
+  <li>Product discovery and building what matters</li>
+  <li>Measuring to ensure updates are a success</li>
+  <li>And much more!</li>
+ </ul>
+
+ <p class="email"><strong>Email address</strong></p> <p class="error-message">Valid email required</p> 
+ <input id="myInput" type="email" placeholder="email@company.com" >
+ <button class="btn btn-lg btn-dark">Subscribe to monthly newsletter</button>
+</div>
+
+</div>
+
+  <!-- Sign-up form end -->
+
+  <!-- Success message start -->
+ <div id="success-page">
+  <img class="sucess-img" src="./assets/images/icon-success.svg" alt="">
+ <h1>Thanks for subscribing!</h1> 
+
+ <p>A confirmation email has been sent to <strong>ash@loremcompany.com.</strong>  
+  Please open it and click the button inside to confirm your subscription.</p> 
+
+ <button id="btn-sucess" class="btn btn-lg" onClick = "window.location.reload(true)">Dismiss message</button> 
+</div>
+  <!-- Success message end -->
+  <footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Abu Haneefah</a>.
+  </div>
+</footer>
+
+  <!-- JQUERY -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <!-- javaScript -->
+  <script src="./index.js"></script>
+</body>
+</html>
